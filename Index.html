@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oaklee-Mayde Photography | Central Florida</title>
+<style>
+:root{--cream:#f7f3ec;--brown:#493a30;--taupe:#a58d79}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--brown);font-family:Georgia,serif;line-height:1.7}
+header{text-align:center;padding:32px 16px;background:#eee6db}
+.logo{font-size:clamp(25px,5vw,42px);letter-spacing:2px}
+.subtitle{font-size:11px;letter-spacing:4px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;padding:15px}
+a{color:inherit;text-decoration:none}
+nav a{font-size:13px}
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(#e6d9c9,#f7f3ec)}
+h1,h2{font-weight:normal;line-height:1.3}
+h1{font-size:clamp(38px,7vw,65px)}
+h2{font-size:36px}
+section{padding:65px 20px;max-width:1100px;margin:auto}
+.center{text-align:center}
+.eyebrow{letter-spacing:3px;font-size:12px;text-transform:uppercase}
+.button{display:inline-block;background:var(--brown);color:white;padding:13px 28px;border:0;cursor:pointer;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:white;padding:22px;text-align:center}
+.photo{height:250px;background:#ddd0c0;display:grid;place-items:center;color:#69584b;font-style:italic}
+.price{font-size:38px;margin:8px}
+input,select,textarea{width:100%;padding:13px;margin:7px 0 17px;border:1px solid #cbbcad;background:white;font:inherit}
+label{font-size:14px}
+textarea{min-height:110px}
+footer{text-align:center;padding:35px;background:var(--brown);color:white}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Oaklee-Mayde Photography</div>
+<div class="subtitle">CENTRAL FLORIDA PHOTOGRAPHER</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#investment">Investment</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<p class="eyebrow">Timeless • Authentic • Beautiful</p>
+<h1>Capturing life's<br><i>most beautiful moments.</i></h1>
+<p>Heartfelt photography for every chapter of your story.</p>
+<a class="button" href="#contact">Inquire About a Session</a>
+</div>
+
+<section id="portfolio">
+<div class="center">
+<p class="eyebrow">The Portfolio</p>
+<h2>Moments Worth Remembering</h2>
+<p>Beautifully preserving the memories that matter most.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="photo">Maternity Photo</div><h3>Maternity</h3></div>
+<div class="card"><div class="photo">Family Photo</div><h3>Families</h3></div>
+<div class="card"><div class="photo">Milestone Photo</div><h3>Children & Milestones</h3></div>
+<div class="card"><div class="photo">Fresh 48 Photo</div><h3>Fresh 48 & Newborns</h3></div>
+<div class="card"><div class="photo">Couples Photo</div><h3>Couples</h3></div>
+<div class="card"><div class="photo">Portfolio Coming Soon</div><h3>Seniors & Weddings</h3></div>
+<div class="card"><div class="photo">Portfolio Coming Soon</div><h3>Sports</h3></div>
+<div class="card"><div class="photo">Portfolio Coming Soon</div><h3>Seasonal Minis</h3></div>
+</div>
+</section>
+
+<section id="about" class="center">
+<p class="eyebrow">Behind the Lens</p>
+<h2>Welcome to Oaklee-Mayde</h2>
+<p>I'm so happy you're here! At Oaklee-Mayde Photography, I believe every season of life deserves to be beautifully remembered. From the smallest newborn details to joyful family connections, my goal is to create authentic, timeless images you'll treasure for years to come.</p>
+<p>Serving families, couples, and individuals throughout Central Florida.</p>
+</section>
+
+<section id="investment">
+<div class="center">
+<p class="eyebrow">The Investment</p>
+<h2>Beautiful Memories, Thoughtfully Captured</h2>
+</div>
+<div class="grid">
+<div class="card">
+<h3>The Petite Session</h3>
+<div class="price">$165</div>
+<p>30-minute photography session</p>
+<a class="button" href="#contact">Inquire</a>
+</div>
+<div class="card">
+<h3>The Signature Session</h3>
+<div class="price">$195</div>
+<p>One-hour photography session</p>
+<a class="button" href="#contact">Inquire</a>
+</div>
+</div>
+<div class="center">
+<p>Every standard session includes an unlimited online gallery with high-resolution downloads, guided posing, candid photographs, and a personalized color styling guide.</p>
+<p><b>Booking Policy:</b> A $50 non-refundable deposit is due at booking. The remaining balance is due 3 days before your scheduled session.</p>
+<p>Specialty sessions may have separate pricing.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="center">
+<p class="eyebrow">Let's Create Something Beautiful</p>
+<h2>Session Inquiry</h2>
+<p>I'd love to hear from you!</p>
+</div>
+<form name="session-inquiry" method="POST" data-netlify="true" action="/thank-you.html">
+<input type="hidden" name="form-name" value="session-inquiry">
+<label>Full Name<input name="name" required></label>
+<label>Email Address<input name="email" type="email" required></label>
+<label>Phone Number<input name="phone" type="tel" required></label>
+<label>Session Type
+<select name="session-type" required>
+<option value="">Choose a session</option>
+<option>Family</option><option>Children & Milestones</option>
+<option>Maternity</option><option>Fresh 48</option>
+<option>Newborn</option><option>Couples</option>
+<option>Seniors</option><option>Sports</option>
+<option>Seasonal Mini</option><option>Wedding</option>
+</select></label>
+<label>Session Length
+<select name="session-length" required>
+<option value="">Select an option</option>
+<option>30 minutes - $165</option>
+<option>1 hour - $195</option>
+<option>Specialty session - Request pricing</option>
+</select></label>
+<label>Preferred Date<input type="date" name="preferred-date"></label>
+<label>Preferred Location<input name="location"></label>
+<label>Tell Me About Your Session<textarea name="message"></textarea></label>
+<button class="button" type="submit">Send My Inquiry</button>
+</form>
+<p class="center">Or email: <a href="mailto:Alexah.mckenzie3@gmail.com">Alexah.mckenzie3@gmail.com</a></p>
+</section>
+<footer>
+Oaklee-Mayde Photography<br>
+Central Florida<br>
+<small>Capturing life's most beautiful moments.</small>
+</footer>
+</body>
+</html>
